@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<style>
+    /* Reset básico para ocupar a tela toda */
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 80%;
+        background-color: #1a1a1a;
+    }
+
+    /* Container principal ocupando 100% */
+    .comando-container {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+        padding: 20px;
+        min-height: 100vh;
+        box-sizing: border-box; /* Garante que o padding não quebre o 100% */
+        border: 1px solid #333;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        text-align: center;
+        color: #00aff0;
+        text-transform: uppercase;
+        border-bottom: 2px solid #00aff0;
+        padding-bottom: 15px;
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    /* Tabela ocupando largura total */
+    .tabela-comandos {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        background-color: #222;
+    }
+
+    .tabela-comandos th {
+        background-color: #00aff0;
+        color: white;
+        padding: 15px;
+        text-align: left;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .tabela-comandos td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #333;
+        font-size: 16px;
+    }
+
+    .tabela-comandos tr:hover {
+        background-color: #2d2d2d;
+    }
+
+    /* Estilo dos IDs e Comandos */
+    .id-badge {
+        background-color: #444;
+        padding: 5px 12px;
+        border-radius: 4px;
+        font-family: 'Courier New', monospace;
+        color: #00aff0;
+        font-weight: bold;
+        box-shadow: inset 0 0 5px #000;
+    }
+      
+    .cmd-text {
+        color: #00aff0;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+
+    .num-col {
+        color: #00aff0;
+        font-weight: bold;
+        width: 50px;
+        text-align: center;
+    }
+
+    /* Ajuste para telas menores */
+    @media (max-width: 600px) {
+        .tabela-comandos th, .tabela-comandos td {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="comando-container">
+    <h2>Comandos Privados dos Djs/Locutores do [a] Xat/Rádio:</h2>
+    
+    <table class="tabela-comandos">
+        <thead>
+            <tr>
+                <th style="text-align: center;">Nº</th>
+                <th>Comando / Nome</th>
+                <th>ID do Usuário</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="num-col">01</td><td><span class="cmd-text">Digitar !1 / Beto</span></td><td><span class="id-badge">1504788330</span></td></tr>
+            <tr><td class="num-col">02</td><td><span class="cmd-text">Digitar !2 / Malu</span></td><td><span class="id-badge">464321436</span></td></tr>
+            <tr><td class="num-col">03</td><td><span class="cmd-text">Digitar !3 / Fox</span></td><td><span class="id-badge">1498809390</span></td></tr>
+            <tr><td class="num-col">04</td><td><span class="cmd-text">Digitar !4 / Felyna</span></td><td><span class="id-badge">1542945667</span></td></tr>
+            <tr><td class="num-col">05</td><td><span class="cmd-text">Digitar !5 / Joe Santos</span></td><td><span class="id-badge">1528417913</span></td></tr>
+            <tr><td class="num-col">06</td><td><span class="cmd-text">Digitar !6 / João</span></td><td><span class="id-badge">1525413054</span></td></tr>
+            <tr><td class="num-col">07</td><td><span class="cmd-text">Digitar !7 / Kinho</span></td><td><span class="id-badge">333000333</span></td></tr>
+            <tr><td class="num-col">08</td><td><span class="cmd-text">Digitar !9 / Daywyson</span></td><td><span class="id-badge">350068121</span></td></tr>
+            <tr><td class="num-col">09</td><td><span class="cmd-text">Digitar !10 / Maresia</span></td><td><span class="id-badge">584320464</span></td></tr>
+            <tr><td class="num-col">10</td><td><span class="cmd-text">Digitar !11 / Marrenta</span></td><td><span class="id-badge">1502290486</span></td></tr>
+            <tr><td class="num-col">11</td><td><span class="cmd-text">Digitar !12 / Nessia</span></td><td><span class="id-badge">1525511440</span></td></tr>
+            <tr><td class="num-col">12</td><td><span class="cmd-text">Digitar !13 / Tony</span></td><td><span class="id-badge">1520656135</span></td></tr>
+            <tr><td class="num-col">13</td><td><span class="cmd-text">Digitar !14 / Nelson</span></td><td><span class="id-badge">1525550100</span></td></tr>
+            <tr><td class="num-col">14</td><td><span class="cmd-text">Digitar !15 / Kappo</span></td><td><span class="id-badge">1541246943</span></td></tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
